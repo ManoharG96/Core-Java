@@ -42,4 +42,5 @@ public class Doctor {
 				System.out.println("Appointments are : "+appointment);
 		}
 	}
+	
 }

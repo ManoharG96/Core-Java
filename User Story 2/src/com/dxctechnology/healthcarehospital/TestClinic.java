@@ -65,6 +65,8 @@ public class TestClinic {
 				break;
 			}
 		}
+		
+		
 		scn.close();
 	}
 }

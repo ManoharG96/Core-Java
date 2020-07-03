@@ -4,8 +4,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 
 public class ScoreAnalyers {
-	int avg = 0;
-	int total = 0;
+	double total = 0;
 	public ScoreAnalyers() {
 		super();
 	}
@@ -16,12 +15,11 @@ public class ScoreAnalyers {
 		runsData.add(runs);
 	}
 
-	public int calRunRate () {
-		for(int i = 0; i < runsData.size(); i++) {
-			total = total + runsData.get(i);
-			avg = total / 50;
+	public double calRunRate () {
+		for(int run : runsData) {
+			total = total + run;
 		}
-		return avg;
+		return total / 50;
 	}
 
 	public int lowestRun() {
